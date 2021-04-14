@@ -22,9 +22,11 @@ Gateway component is used to do all the SSL terminations and Authentications, Th
 #### Tech stack
 ##### 1. AWS API gateway - Recommended
 pros: Aws managed service, will help you handle all the above. Easy to integrate with other AWS service
+
 cons: cost much
 ##### 2. Custom Solution using AWS ECS/EC2 with LB.
 pros: flexible, low cost.
+
 cons: scaling might cause a lot of pain, considering the TPS is 11575.
 
 
@@ -33,9 +35,11 @@ Event Ingestion Service is used to stream billions of events per second from any
 #### Tech stack
 ##### 1. AWS Lambda
 pros: Aws managed service, serverless,
+
 cons: cold start -- high latency, cost much - considering high TPS.
 ##### 2. AWS ECS(Fargate) with LB - Recommended
 pros: low latency, using container. Easy to manage.
+
 cons: less cost.
 
 ### Data Streaming Service.
@@ -43,9 +47,11 @@ Data Streaming Service is used to stream billions of events per second from any 
 #### Tech stack
 ##### 1. AWS Kinesis - Recommended.
 pros: Aws managed service easy to setup, real time low latency with high availability.
+
 cons: easy to maintain, cost much, has more limitations such as a maximum 7-day retention period
 ##### 2. Kafka
 pros: flexible with multiple configurations.
+
 cons: less cost. more time to set up and manage the fleet.
 ##### Discussion:
 if 7-day retention period is not the big concern, then kinesis seems better.
