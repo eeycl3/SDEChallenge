@@ -90,4 +90,4 @@ cons:
 
 #### Discussion
 Because of the wide use case of our customers, so we introduce 3 different storage solutions for our customers. 
-One is time-series DB, elastic search and raw data solutions. time series DB is used for query time related query and elastic search is used for content based query. Raw data with ETL solution is providing custom complex query.
+They are time-series DB, elastic search and raw data solutions. time series DB is used for query time related query and elastic search is used for content based query. Raw data with ETL solution is providing complex query.
